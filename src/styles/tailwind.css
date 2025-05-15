@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #9333EA; /* purple-600 */
+    --color-primary-light: #C084FC; /* purple-400 */
+    --color-primary-dark: #6B21A8; /* purple-800 */
+    
+    /* Neutral Colors */
+    --color-background: #09090B; /* zinc-950 */
+    --color-surface: #18181B; /* zinc-900 */
+    --color-surface-alt: #27272A; /* zinc-800 */
+    --color-border: #3F3F46; /* zinc-700 */
+    --color-text-primary: #FFFFFF; /* white */
+    --color-text-secondary: #A1A1AA; /* zinc-400 */
+    --color-text-tertiary: #71717A; /* zinc-500 */
+    
+    /* Semantic Colors */
+    --color-success: #10B981; /* emerald-500 */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-error: #F43F5E; /* rose-500 */
+    --color-info: #0EA5E9; /* sky-500 */
+    
+    /* Accent Colors */
+    --color-accent-1: #D946EF; /* fuchsia-500 */
+    --color-accent-2: #3B82F6; /* blue-500 */
+    --color-accent-3: #F97316; /* orange-500 */
+  }
+  
+  body {
+    @apply bg-background text-text-primary font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+  
+  code, pre {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .display-large {
+    @apply text-5xl font-display font-bold;
+  }
+  
+  .display-medium {
+    @apply text-4xl font-display font-bold;
+  }
+  
+  .display-small {
+    @apply text-3xl font-display font-semibold;
+  }
+  
+  .heading-large {
+    @apply text-2xl font-display font-semibold;
+  }
+  
+  .heading-medium {
+    @apply text-xl font-display font-medium;
+  }
+  
+  .heading-small {
+    @apply text-lg font-display font-medium;
+  }
+  
+  .body-large {
+    @apply text-base font-sans;
+  }
+  
+  .body-medium {
+    @apply text-sm font-sans;
+  }
+  
+  .body-small {
+    @apply text-xs font-sans;
+  }
+  
+  .code {
+    @apply text-sm font-mono;
+  }
+}
