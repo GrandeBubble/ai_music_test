@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 import tagger from "@dhiwise/component-tagger";
 
+
 // https://vitejs.dev/config/
 export default defineConfig({
   // This changes the out put dir from dist to build
@@ -17,5 +18,7 @@ export default defineConfig({
     host: true,
     strictPort: true,
     allowedHosts: ['.amazonaws.com', '.builtwithrocket.new']
-  }
+  },
+
+  base: '/ai_music_test/',
 });
