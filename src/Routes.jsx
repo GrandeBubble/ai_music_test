@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, useRoutes } from "react-router-dom";
+import { HashRouter as Router, useRoutes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import ProjectGallery from "./pages/project-gallery";
 import GenreFusionLaboratory from "./pages/genre-fusion-laboratory";

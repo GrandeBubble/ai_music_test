@@ -2,7 +2,7 @@
   "name": "ai_music",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://grandebubble.github.io/ai_music_test",
   "dependencies": {
     "@dhiwise/component-tagger": "^1.0.1",
     "@reduxjs/toolkit": "^2.6.1",
