@@ -13,11 +13,11 @@ const UserProfileSettings = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const tabs = [
-    { id: "profile", label: "Profile", icon: "User" },
-    { id: "settings", label: "Settings", icon: "Settings" },
-    { id: "subscription", label: "Subscription", icon: "CreditCard" },
-    // { id: "storage", label: "Storage", icon: "HardDrive" },
-    // { id: "security", label: "Security", icon: "Shield" },
+    { id: "profile", label: "个人资料", icon: "User" },
+    { id: "settings", label: "设置", icon: "Settings" },
+    { id: "subscription", label: "订阅", icon: "CreditCard" },
+    // { id: "storage", label: "存储空间", icon: "HardDrive" },
+    // { id: "security", label: "安全", icon: "Shield" },
   ];
 
   const renderTabContent = () => {
@@ -39,29 +39,29 @@ const UserProfileSettings = () => {
 
   return (
     <div className="flex min-h-screen bg-background text-text-primary">
-      {/* Sidebar */}
+      {/* 侧边栏 */}
       <Sidebar />
 
-      {/* Main Content */}
+      {/* 主内容区 */}
       <div className="flex-1 flex flex-col">
-        {/* Header */}
+        {/* 头部 */}
         <Header
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
         />
 
-        {/* Main Content Area */}
+        {/* 主要内容区域 */}
         <main className="flex-1 p-6">
           <div className="max-w-7xl mx-auto">
-            {/* Page Title */}
+            {/* 页面标题 */}
             <div className="mb-8">
-              <h1 className="display-small mb-2">User Profile & Settings</h1>
+              <h1 className="display-small mb-2">用户个人资料与设置</h1>
               <p className="body-medium text-text-secondary">
-                Manage your account, preferences, and personalize your AI Music experience
+                管理您的账户、偏好设置并个性化您的AI音乐体验
               </p>
             </div>
 
-            {/* Tabs Navigation */}
+            {/* 标签导航 */}
             <div className="mb-8 border-b border-border">
               <div className="flex overflow-x-auto hide-scrollbar">
                 {tabs.map((tab) => (
@@ -79,7 +79,7 @@ const UserProfileSettings = () => {
               </div>
             </div>
 
-            {/* Tab Content */}
+            {/* 标签内容 */}
             <div className="min-h-[60vh]">
               {renderTabContent()}
             </div>
@@ -90,4 +90,4 @@ const UserProfileSettings = () => {
   );
 };
 
-export default UserProfileSettings;
+export default UserProfileSettings;  

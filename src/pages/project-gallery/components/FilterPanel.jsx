@@ -19,27 +19,27 @@ const FilterPanel = ({ filterType, setFilterType, sortBy, setSortBy }) => {
             </button>
 
             <button
-              className={`flex items-center justify-center px-4 py-3 rounded-lg transition-all duration-300 ${filterType === "Vocal Tuning" ? "bg-accent-1 bg-opacity-20 text-accent-1" : "bg-surface-alt hover:bg-opacity-80"
+              className={`flex items-center justify-center px-4 py-3 rounded-lg transition-all duration-300 ${filterType === "AI修音" ? "bg-accent-1 bg-opacity-20 text-accent-1" : "bg-surface-alt hover:bg-opacity-80"
                 }`}
-              onClick={() => setFilterType("Vocal Tuning")}
+              onClick={() => setFilterType("AI修音")}
             >
               <Icon name="Mic2" size={18} className="mr-2" />
               <span>AI修音</span>
             </button>
 
             <button
-              className={`flex items-center justify-center px-4 py-3 rounded-lg transition-all duration-300 ${filterType === "Composition" ? "bg-accent-2 bg-opacity-20 text-accent-2" : "bg-surface-alt hover:bg-opacity-80"
+              className={`flex items-center justify-center px-4 py-3 rounded-lg transition-all duration-300 ${filterType === "AI作曲" ? "bg-accent-2 bg-opacity-20 text-accent-2" : "bg-surface-alt hover:bg-opacity-80"
                 }`}
-              onClick={() => setFilterType("Composition")}
+              onClick={() => setFilterType("AI作曲")}
             >
               <Icon name="Music" size={18} className="mr-2" />
               <span>AI作曲</span>
             </button>
 
             <button
-              className={`flex items-center justify-center px-4 py-3 rounded-lg transition-all duration-300 ${filterType === "Genre Fusion" ? "bg-accent-3 bg-opacity-20 text-accent-3" : "bg-surface-alt hover:bg-opacity-80"
+              className={`flex items-center justify-center px-4 py-3 rounded-lg transition-all duration-300 ${filterType === "曲风融合" ? "bg-accent-3 bg-opacity-20 text-accent-3" : "bg-surface-alt hover:bg-opacity-80"
                 }`}
-              onClick={() => setFilterType("Genre Fusion")}
+              onClick={() => setFilterType("曲风融合")}
             >
               <Icon name="Combine" size={18} className="mr-2" />
               <span>曲风融合</span>
